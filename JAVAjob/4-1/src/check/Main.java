@@ -10,8 +10,9 @@ public class Main {
     private void printName(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        System.out.println("printNameメソッド " + "→ " + firstName + lastName);
+        System.out.println("printNameメソッド → " + this.firstName + this.lastName);
     }
+  
     public static void main(String[] args) {
         Main main = new Main();
         Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
@@ -19,8 +20,6 @@ public class Main {
         
         main.printName("斉藤", "圭介");
         pet.introduce();
-        robo.introduce();
-        
+        robo.introduce();        
     }
-
 }
